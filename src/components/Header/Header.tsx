@@ -4,7 +4,7 @@ import s from "./Header.module.css";
 export const Header = () => {
     return (
         <header className={s.header}>
-            <img src="http://assets.stickpng.com/images/5842909da6515b1e0ad75abe.png" alt="logo"/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" alt="logo"/>
         </header>
     )
 };

@@ -1,10 +1,39 @@
 .navbar {
     grid-area: navbar;
-    background-color: khaki;
+    background: linear-gradient(180deg, #615dfa, darkblue);
+    padding: 20px;
+    color: rgb(45 91 227);
 }
 
 
 .item a {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
+}
+
+.item a.active {
+    color: lightblue;
+    font-weight: bold;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.friendsTitle {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.friends {
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }

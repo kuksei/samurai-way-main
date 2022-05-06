@@ -1,20 +1,22 @@
 import React from "react";
 import s from "./Profile.module.css";
 import {MyPosts} from "./MyPosts/MyPosts";
+import {ProfileInfo} from "./ProfileInfo/ProfileInfo";
+import {PostType} from "../../App";
 
-export const Profile = () => {
+type ProfilePropsType = {
+    state: {posts: Array<PostType>
+            newPostText: string}
+    addPost: () => void
+    changeNewPostText: (value: string) => void
+}
+
+export const Profile = (props: ProfilePropsType) => {
     return (
 
-        <div className={s.content}>
-            <div className={s.background_image}>
-                <img
-                    src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
-                    alt="background"/>
-            </div>
-            <div>
-                ava + description
-            </div>
-            <MyPosts/>
+        <div>
+            <ProfileInfo/>
+            <MyPosts posts={props.state.posts} newPostText={props.state.newPostText} changeNewPostText={props.changeNewPostText} addPost={props.addPost}/>
         </div>
 
     )

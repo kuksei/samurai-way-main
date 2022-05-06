@@ -1,0 +1,38 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.dialogs_items {
+    padding: 10px;
+}
+
+.dialogs_items .active {
+    font-weight: bold;
+}
+
+.dialog {
+    display: flex;
+}
+
+.dialog a {
+    display: block;
+    text-decoration: none;
+    color: midnightblue;
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.messages {
+    padding: 10px;
+}
+
+.message {
+
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}

@@ -1,9 +1,11 @@
 .header {
     grid-area: header;
-    background-color: khaki;
+    background-color: #615dfa;
 }
 
 .header img {
-    width: 100px;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px
 }
 
